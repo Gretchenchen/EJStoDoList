@@ -1,0 +1,31 @@
+
+
+
+<%- include("header") -%>
+
+    <div class="box" id="heading">
+        <h1> <%= listTitle %> </h1> 
+    </div>
+    
+    <div class="box">
+            <!-- add open and close tag on every line of JS code -->
+            <!-- loop through all the elements of items array -->
+            <% for(var i = 0; i<newListItems.length; i++) { %>
+                <div class="item">
+                    <input type="checkbox">
+                    <p> <%= newListItems[i] %></p>
+                </div>
+                
+            <% } %>
+    
+        <form class="item action="/" method="post">
+            <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+            <!-- change the value of buuton to dynamic variable -->
+            <button type="submit" name="list" value=<%= listTitle %>>+</button>
+        </form>
+    </div>
+
+
+    <%- include("footer") -%>
+
+    
