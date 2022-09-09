@@ -1,2 +1,2 @@
 # EJStoDoList
-a dynamic todolist by using EJS
+a dynamic todolist using EJS
